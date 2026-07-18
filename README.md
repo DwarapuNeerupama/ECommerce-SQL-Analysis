@@ -33,11 +33,16 @@ The database schema was designed and implemented in MySQL Workbench.
 ## What's in this repo
 
 
-Database_Setup.sql – creates the schema (customers, orders, order_items, payments) and loads the raw CSVs in
+Database_Setup.sql – creates the schema (customers, orders, order_items, payments) and loads the raw CSVs
+
 Data_cleaning.sql – checks for duplicate IDs, orphaned records (orders with no matching customer, order_items with no matching order), invalid prices/payments, and delivery dates that don't make sense
+
 exploratory_analysis.sql – first pass at the data: order counts, order status breakdown, orders over time, price outliers
+
 customer_analysis.sql – repeat customers, top spenders, customer ranking with a window function, revenue by state and city
+
 sales_analysis.sql – total revenue, average order value, revenue by payment type, monthly revenue trend, top products and sellers
+
 business_insights.sql – delivery performance: average delivery time, late delivery rate, freight cost as a % of item price
 
 
